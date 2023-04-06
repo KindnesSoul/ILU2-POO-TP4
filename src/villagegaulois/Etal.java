@@ -68,7 +68,7 @@ public class Etal <T extends Produit> {
 		donneesVente[0] = String.valueOf(etalOccupe);
 		if (etalOccupe) {
 			donneesVente[1] = vendeur.getNom();
-			donneesVente[2] = produit;
+			donneesVente[2] = produit.getNom();
 			donneesVente[3] = String.valueOf(quantiteDebutMarche);
 			donneesVente[4] = String.valueOf(quantiteDebutMarche - quantite);
 		}

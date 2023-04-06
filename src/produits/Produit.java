@@ -1,10 +1,10 @@
 package produits;
 
 public class Produit {
-	private String nom;
+	protected String nom;
 	private Unite unite;
 	
-	public Produit(String nom , Unite unite) {
+	public Produit( String nom , Unite unite) {
 		this.nom=nom;
 		this.unite=unite;	
 	}
@@ -13,9 +13,11 @@ public class Produit {
 	}
 	public String descriptionProduit(Produit prod) {
 		if (prod.getNom()=="Poisson") {
-			return("poisson pêchés"+);
+			return("poisson pï¿½chï¿½s le"+Poisson.date);
 		}
-		 
+		if (prod.getNom()=="sanglier") {
+			return ("sanglier de"+sanglier.poid+unite+"chasser par"sanglier.chasseur);
+		}
 	}
 
 }
